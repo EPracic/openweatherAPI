@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<h2>Lokacija:   {{ data.name }}   </h2>
+
+<h2>Temperatura:   {{ data.main.temp }} &#176;C   </h2>
+
+<img src="http://openweathermap.org/img/w/{{ data.weather[0].icon }}.png" alt="ikona">
+
+
+{% endblock content %}
